@@ -15,8 +15,5 @@ export function fetchMovies(value) {
     payload: axios.get(`http://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&s=${value}`)
   };
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396

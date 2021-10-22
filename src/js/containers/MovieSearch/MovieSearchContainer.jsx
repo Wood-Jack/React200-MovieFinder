@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-/* eslint-disable linebreak-style */
-
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
 import React from 'react';
 import MovieDetailContainer from '../MovieDetails/MovieDetailContainer';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
@@ -12,21 +7,11 @@ import { updateMovieSearch, fetchMovies } from './movieSearchAction';
 class MovieSearchContainer extends React.Component {
 
   constructor(props) {
-<<<<<<< HEAD
     super(props);
     this.clickHandler = this.clickHandler.bind(this);
     this.handleMovieInput = this.handleMovieInput.bind(this);
     this.fetchDataClick = this.fetchDataClick.bind(this);
   }
-=======
-
-    super(props);
-    this.clickHandler = this.clickHandler.bind(this); 
-    this.handleMovieInput = this.handleMovieInput.bind(this);
-    this.fetchDataClick = this.fetchDataClick.bind(this);
-
-  }  
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
 
   clickHandler(event) {
     window.location.assign(`/#/movie/${event.target.value}`);
@@ -39,28 +24,16 @@ class MovieSearchContainer extends React.Component {
 
   fetchDataClick(event) {
     const { dispatch } = this.props;
-<<<<<<< HEAD
     const { value } = event.target;
     dispatch(fetchMovies(value));
   }
 
   render() {
-=======
-    const { value } = event.target; 
-    dispatch(fetchMovies(value));
-  }
-   
-  render() { 
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
     // eslint-disable-next-line react/prop-types
     const { movie, lineItems } = this.props;
     const noImageUrl = 'https://www.freeiconspng.com/uploads/no-image-icon-23.jpg';
 
-<<<<<<< HEAD
     // console.log("LineItems.Search",lineItems.Search);
-=======
-    // console.log("LineItems.indexof",lineItems.indexOf(lineitems)); 
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
     return (
       <Router>
         <div className='container'>
@@ -89,11 +62,7 @@ class MovieSearchContainer extends React.Component {
               <img
                 src={ lineItem.Poster !== 'N/A' ? lineItem.Poster : noImageUrl }
                 className='image-fluid img-thumbnail m-2'
-<<<<<<< HEAD
                 alt='No Poster Available'
-=======
-                alt='No Poster Available' 
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
                 width='20%'
                 height='auto'
               />
@@ -133,7 +102,3 @@ class MovieSearchContainer extends React.Component {
 }
 
 export default MovieSearchContainer;
-<<<<<<< HEAD
-=======
-
->>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396

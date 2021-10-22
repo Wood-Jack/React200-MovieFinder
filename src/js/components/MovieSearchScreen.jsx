@@ -1,19 +1,15 @@
 import React from 'react';
 
 
-export default class MovieSearchScreen extends React.Component { 
-    
-    render() {
-   
-      return (
+export default class MovieSearchScreen extends React.Component {
 
-        <div className='card' id='city-card-border'>
-            <div className= 'card-header' id= 'city-card-header'>Title</div>
-            <div className= 'card-body'>
-             
+  render() {
+    return (
 
-            </div>
-        </div>
-      );
-    }
+      <div className='card' id='city-card-border'>
+        <div className='card-header' id='city-card-header'>Title</div>
+        <div className='card-body' />
+      </div>
+    );
+  }
 }
