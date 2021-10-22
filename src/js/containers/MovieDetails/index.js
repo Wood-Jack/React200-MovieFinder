@@ -9,4 +9,8 @@ function mapStoreToProps(store) {
   };
 }
 
+<<<<<<< HEAD
 export default connect(mapStoreToProps)(MovieDetailContainer);
+=======
+export default connect(mapStoreToProps)(MovieDetailContainer);
+>>>>>>> 744a98eee8a250c78db5e7aff7afe5e5a4a57396
